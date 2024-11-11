@@ -16,3 +16,12 @@ const countdownDiv = document.getElementById("countdown");
 const answersForm = document.getElementById("answers-form");
 const messageParagraph = document.getElementById("message");
 const inputGroup = document.getElementById("input-group");
+
+// Generare numeri casuali 
+const randomNumbers = generateRandomNumbers(5, 1, 50);
+randomNumbers.forEach(number => {
+    const listItem = document.createElement("li");
+    listItem.textContent = number;
+    listItem.classList.add("fs-2", "fw-bold");
+    numbersList.appendChild(listItem);
+});
